@@ -1,0 +1,55 @@
+.zindex1{
+     z-index: 1000; 
+    position: absolute;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-top: 25%;
+    left: 10px;
+    top: -200px;
+    
+}
+
+.zindex3{
+    z-index: 1000; 
+   position: relative;
+   background-color: lightgray;
+   padding: 20px;
+   border-radius: 25px;
+   margin-left: 10%;
+   margin-top: 10%;
+   left: -140px;
+   top: -600px;
+   width: 330px;
+   
+}
+.zindex2{
+       z-index: 1000;
+    position: absolute;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 40px;
+    margin-left: 25%;
+    margin-top: 25%;
+    left: 10px;
+    top: 230px;
+    height: 3400px;
+    width: 800px;
+}
+.Collapsible__contentInner{
+    background-color: darkgreen;
+}
+.zindex6{
+    z-index: 1000; 
+   position: relative;
+   background-color: lightgray;
+   padding: 20px;
+   border-radius: 25px;
+   margin-left: 10%;
+   margin-top: 10%;
+   left: -140px;
+   top: -300px;
+   width: 330px;
+   
+}
