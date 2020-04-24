@@ -7,7 +7,7 @@ class Auth {
       domain: 'changeauthtoke.auth0.com',
       audience: 'https://changeauthtoke.auth0.com/userinfo',
       clientID: 'mTAKNq7tCvkGS6WkPZl9RbNwFc5mwQc2',
-      redirectUri: 'http://localhost:3000/callback',
+      redirectUri: 'https://fast-reaches-53466.herokuapp.com',
       responseType: 'id_token',
       scope: 'openid profile'
     });
