@@ -16,16 +16,11 @@ const Home = () => {
                   <h3>Providing professional construction services since 1990.</h3>
                   <p>Get Started Today and Complete Our Form to Request Your Free Estimate</p>
                </div>
-               <div class="col-sm-4 col-xs-12 col-md-4 text-right"><a href="#contact" class="btn btn-custom btn-lg page-scroll">PURCHASE NOW</a></div>
+
             </div>
          </div>
       </div>
 	  {/* <!-- End Get Touch Section --> */}
-    <Container fluid>
-
-          <ProjectsList />
-
-    </Container>
 
     {/* <!-- Footer Section --> */}
       <footer id="footer">
