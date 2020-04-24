@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { ListItem, List } from "../List";
 import DeleteBtn from "../DeleteBtn";
+import { Col, Row, Container } from "../../components/Grid";
 import { Link } from "react-router-dom";
 
 import { useStoreContext } from "../../utils/GlobalState";
@@ -50,23 +51,34 @@ function ProjectsList() {
       <h1>All Projects</h1>
       <h3 className="mb-5 mt-5">Click on a project to view</h3>
       {state.projects.length ? (
-        <List>
+        <div className="row">
           {state.projects.map(project => (
+            
+            <div key={project.title} className="card mx-auto col-12 col-sm-6 col-md-4">
             <div style ={divStyle} className = {style.link}>
-            <ListItem key={project._id} title={project.title} author = {project.author} id ={project._id}>
-              <div className = {style.detailsContainer}>
-              {project.title}  
-              </div>
-              <div className={style.description}>
-              {project.author}
-              </div>
-              
-              <DeleteBtn onClick={() => removeProject(project._id)} />
-              
+            <ListItem key={project._id} title={project.title} imageURL = {project.imageURL} id ={project._id}>
+            <img className="card-img-top" src={project.imageURL} alt={project.title} />
+            <div className="card-body">
+              <h4 className="card-title">{project.title}</h4>
+            {/* <input type = "text" ref={inputRef}/> */}
+            </div>
             </ListItem>
             </div>
+            <Row>
+      {/* <Col size="md-6">
+        <button className="btn btn-primary disabled" onClick={() => dispatch("change" + project.title.split(" ").join(""))}>
+        Add Contact Information (coming soon)
+      </button>
+          </Col>*/}
+            <Col size="md-6 sm-12">
+            <DeleteBtn className="btn btn-danger" onClick={() => removeProject(project._id)} />
+            </Col>
+          </Row>
+          
+          
+          </div>
           ))}
-        </List>
+        </div>
       ) : (
         <h3>You haven't added any projects yet!</h3>
       )}
