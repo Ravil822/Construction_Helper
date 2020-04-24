@@ -56,7 +56,7 @@ app.post('/answer/:id', checkJwt, (req, res) => {
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI ||
-   "mongodb://user1:Rk2020@ds035004.mlab.com:35004/heroku_vft4lg1g");
+   "mongodb://user1:Rk2020@ds259245.mlab.com:59245/heroku_pfmqkrp6");
 
 // Start the API server
 app.listen(PORT, function() {
