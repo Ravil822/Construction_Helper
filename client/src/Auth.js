@@ -11,7 +11,7 @@ class Auth {
       // clientID: 'mTAKNq7tCvkGS6WkPZl9RbNwFc5mwQc2',
       clientID: 'yqBiqFpl3YCsabTwSTbnugLwajw7swk7',
       // redirectUri: 'http://localhost:3000/callback',
-      redirectUri: 'http://localhost:3000/callback',
+      redirectUri: 'https://fast-reaches-53466.herokuapp.com/callback',
       responseType: 'id_token',
       scope: 'openid profile'
     });
