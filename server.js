@@ -22,12 +22,15 @@ const checkJwt = jwt({
     cache: true,
     rateLimit: true,
     jwksRequestsPerMinute: 5,
-    jwksUri: `https://changeauthtoke.auth0.com/.well-known/jwks.json`
+    // jwksUri: `https://changeauthtoke.auth0.com/.well-known/jwks.json`
+    jwksUri: `https://dev-rmqvy99s.auth0.com/.well-known/jwks.json`
   }),
 
   // Validate the audience and the issuer.
-  audience: 'mTAKNq7tCvkGS6WkPZl9RbNwFc5mwQc2',
-  issuer: `https://changeauthtoke.auth0.com/`,
+  // audience: 'mTAKNq7tCvkGS6WkPZl9RbNwFc5mwQc2',
+  audience: 'yqBiqFpl3YCsabTwSTbnugLwajw7swk7',
+  // issuer: `https://changeauthtoke.auth0.com/`,
+  issuer: `dev-rmqvy99s.auth0.com/`,
   algorithms: ['RS256']
 });
 
@@ -56,8 +59,8 @@ app.post('/answer/:id', checkJwt, (req, res) => {
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI ||
-   "mongodb://user1:Rk2020@ds259245.mlab.com:59245/heroku_pfmqkrp6, { useNewUrlParser: true }");
-
+  //  "mongodb://user1:Rk2020@ds259245.mlab.com:59245/heroku_pfmqkrp6, { useNewUrlParser: true }");
+  "mongodb://localhost/constructionProject");
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
