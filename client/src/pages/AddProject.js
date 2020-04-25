@@ -15,8 +15,8 @@ const AddProject = () => {
       <footer id="footer">
         
          <div class="footer-bottom">
-            <p> © Copyright 2017 Website Name. All Rights Reserved </p>
-            <small>Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://www.facebook.com/iamgurdeeposahan"><b>You Nailed It! Contruction</b> </a></small>
+            <p> © Copyright 2020</p>
+            <small>Made with <i class="fa fa-heart"></i> by <b>You Nailed It! Contruction</b> </small>
          </div>
       </footer>
     </>

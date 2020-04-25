@@ -74,17 +74,13 @@ function ProjectList() {
             <DeleteBtn className="btn btn-danger" onClick={() => removeProject(project._id)} />
             </Col>
           </Row>
-          
-          
           </div>
           ))}
+          
         </div>
       ) : (
         <h3>You haven't added any projects yet!</h3>
       )}
-      <div className="mt-5">
-        <Link to="favorites">View favorites</Link>
-      </div>
     </div>
   );
 }
