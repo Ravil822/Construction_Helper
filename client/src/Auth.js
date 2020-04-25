@@ -3,15 +3,14 @@ import auth0 from 'auth0-js';
 class Auth {
   constructor() {
     this.auth0 = new auth0.WebAuth({
-      // the following three lines MUST be updated
       // domain: 'changeauthtoke.auth0.com',
       domain: 'dev-rmqvy99s.auth0.com',
       // audience: 'https://changeauthtoke.auth0.com/userinfo',
       audience: 'https://dev-rmqvy99s.auth0.com/userinfo',
       // clientID: 'mTAKNq7tCvkGS6WkPZl9RbNwFc5mwQc2',
       clientID: 'yqBiqFpl3YCsabTwSTbnugLwajw7swk7',
-      redirectUri: 'http://localhost:3000/callback',
-      // redirectUri: 'https://fast-reaches-53466.herokuapp.com/callback',
+      // redirectUri: 'http://localhost:3000/callback',
+      redirectUri: 'https://fast-reaches-53466.herokuapp.com/callback',
      
 
       responseType: 'id_token',

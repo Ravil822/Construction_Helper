@@ -8,46 +8,51 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/constructionPro
 const projectSeed = [
   {
     id: 1,
-    title: "New Home Construction",
-    imageURL: "https://si.wsj.net/public/resources/images/B3-DM067_RIGHTS_IM_20190319162958.jpg",
-    description: "build a home from scratch",
+    title: "Bathroom Remodels",
+    imageURL: "https://www.immersestl.com/wp-content/uploads/2017/10/Evanescence_Oval-6636_preview-300x326.jpeg",
+    description: "We need to remodel our bathroom. We have all materials. Need to finish it by July 4, 2020. Please contact me by my phone number: 004-564-4564 Linda. ",
     date: { type: Date, default: Date.now }
   },
   {
     id: 2,
-    title: "Home Additions",
-    imageURL: "https://specials-images.forbesimg.com/imageserve/1026205392/960x0.jpg?fit=scale",
-    description: "Remove or add stuff to an existing home",
+    title: "Granite countertop",
+    imageURL: "https://farmhousegoals.com/wp-content/uploads/2019/12/Signature-Hardware-214146-30-18-Vine-Design-Farmhouse-Single-Basin-Copper-Kitchen-Sink-0-300x360.jpg",
+    description: "We need to remodel our kitchen.  Need to finish it by July 4, 2020. Please contact me by my phone number: 004-564-4564 Linda.",
     date: { type: Date, default: Date.now }
   },
   {
     id: 3,
-    title: "Bathroom Remodels",
-    imageURL: "https://www.thespruce.com/thmb/YuqBcOldMD_Z6D35Em-3ae-A0x8=/640x428/filters:no_upscale()/beach-style-bathroom-white-marble-589daa1c3df78c475853c280.jpg",
-    description: "installation for faucets, sinks, showerheads, tubs, and other related items",
+    title: "Inground Swimming Pool",
+    imageURL: "https://www.tierranicarealestate.com/wp-content/uploads/2019/10/open-area-300x386-300x326.jpg",
+    description: "We need to build Inground Swimming Pool. Need to finish it by July 4, 2020. Please contact me by my phone number: 004-564-4564 Linda.",
     date: { type: Date, default: Date.now }
   },
   {
     id: 4,
-    title: "Kitchen Remodels",
-    imageURL: "https://st.hzcdn.com/fimgs/90f15e760c36401e_1566-w312-h312-b0-p0--transitional-kitchen.jpg",
-    description: "replacements of countertops with granite and faucet installation",
+    title: "A new home construction",
+    imageURL: "https://www.sitterlehomes.com/files/2017/09/Monteola5151-300x326.jpg",
+    description: "We need to build a new house.  Please contact me by my phone number: 004-564-4564 Linda.",
     date: { type: Date, default: Date.now }
   },
   {
     id: 5,
-    title: "Windows and Doors",
-    imageURL: "https://www.scorpionhome.com/images/pages/replacement-windows-doors-belleville-il.jpg",
-    description: "placement of items",
+    title: "Free help with Painting",
+    imageURL: "https://homesexhibition.com/wp-content/uploads/2019/08/Screen-Shot-2019-08-29-at-09.19.59-300x326.png",
+    description: "We need free help to painting our room. Please contact me by my phone number: 004-564-4564 Linda.",
     date: { type: Date, default: Date.now }
   },
   {
     id: 6,
-    title: "Decks and Porches",
-    imageURL: "https://nexgenremodeling.com/wp-content/uploads/2019/07/porch-and-deck-construction-services-by-local-professionals.jpg",
-    description: "the exterior looks better with replacements",
+    title: "Install new Windows",
+    imageURL: "https://www.scorpionhome.com/images/pages/replacement-windows-doors-belleville-il.jpg",
+    description: "We need to install new windows in our house. Need to finish it by July 4, 2020. Please contact me by my phone number: 004-564-4564 Linda.",
     date: { type: Date, default: Date.now }
   }
+  // {
+  //   title: "Install new hardwood",
+  //   imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMnZ6w2PAds00t5E_j7sZc80XGw7eFesMLCRmJJ1DwXnfUntZv&usqp=CAU",
+  //   description: "We need to install new woodhard in our house. Need to finish it by July 4, 2020. Please contact me by my phone number: 004-564-4564 Linda.",
+  // }
 ];
 
 db.Project.remove({})
