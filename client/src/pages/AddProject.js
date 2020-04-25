@@ -6,13 +6,9 @@ const AddProject = () => {
  
  
   return (<>
- 
 
     <Container fluid>
-  
-    
           <CreateProjectForm />
-
     </Container>
 
     {/* <!-- Footer Section --> */}

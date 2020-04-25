@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_PROJECT, LOADING } from "../../utils/actions";
 import API from "../../utils/API";
@@ -41,7 +42,9 @@ function CreateProjectForm() {
         <button className="btn btn-success mt-3 mb-5" disabled={state.loading} type="submit">
           Save Project
         </button>
+        
       </form>
+      <Link className="btn btn-primary" to="/projects">← Back to Projects</Link>
     </div>
   );
 }

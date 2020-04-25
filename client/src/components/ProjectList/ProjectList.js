@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { ListItem, List } from "../List";
 import DeleteBtn from "../DeleteBtn";
-import { Col, Row, Container } from "../../components/Grid";
+import { Col, Row, Container } from "../Grid";
 import { Link } from "react-router-dom";
 
 import { useStoreContext } from "../../utils/GlobalState";
@@ -16,7 +16,7 @@ const divStyle = {
   backgroundColor: 'blue'
 
 };
-function ProjectsList() {
+function ProjectList() {
   const [state, dispatch] = useStoreContext();
 
   const removeProject = id => {
@@ -89,4 +89,4 @@ function ProjectsList() {
   );
 }
 
-export default ProjectsList;
+export default ProjectList;

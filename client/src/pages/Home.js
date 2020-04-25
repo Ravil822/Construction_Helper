@@ -1,8 +1,5 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
-import CreateProjectForm from "../components/CreateProjectForm/index.js";
-import ProjectsList from "../components/ProjectsList/index.js";
-
 const Home = () => {
  
  

@@ -5,9 +5,20 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GlobalState";
 import { SET_CURRENT_PROJECT, ADD_FAVORITE, REMOVE_FAVORITE } from "../utils/actions";
+import { Resizable } from 're-resizable';
+
+
 
 const Detail = props => {
   const [state, dispatch] = useStoreContext();
+
+  const resizeStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    border: 'solid 1px #ddd',
+    background: '#808080',
+  };
 
   useEffect(() => {
     API.getProject(props.match.params.id)
@@ -34,11 +45,23 @@ const Detail = props => {
       <Container fluid>
         <Row>
           <Col size="md-12">
-            <Jumbotron>
+            <Jumbotron >
               <h1>
                 {state.currentProject.title} 
               </h1>
-              <img src={state.currentProject.imageURL} alt={state.currentProject.title} />
+
+      <Resizable
+        defaultSize={{
+          width: 350,
+          height: 240,
+        }}
+        style={resizeStyle}>
+       {/* <div style={{ width: '60%', height: '50%' }}>  */}
+        <img src={state.currentProject.imageURL} alt={state.currentProject.title} />
+         {/* </div>  */}
+        
+      </Resizable>
+              
               <article>
               <h1>Description:</h1>
               <p>{state.currentProject.description}</p>
